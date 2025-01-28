@@ -5,37 +5,39 @@ const fDel = new Tone.FeedbackDelay(.125, 0.4).connect(reverb);
 const fDel2 = new Tone.FeedbackDelay(.25, 0.4).connect(reverb);
 const filty = new Tone.AutoFilter(.06125, 400, 3).connect(fDel2);
 const samples = new Tone.ToneAudioBuffers({
+//the low notes
   0 : "sounds/root/Arb_Cherry_Low_1a.wav",
   1 : "sounds/root/Arb_Cherry_Low_1b.wav",
 	2 : "sounds/root/Arb_Cherry_Low_1c.wav",
 	3 : "sounds/root/Arb_Cherry_Low_1d.wav",
 	4 : "sounds/root/Arb_Cherry_Low_1e.wav",
 
+//the hi notes
   5 : "sounds/arb/cluster_1/Arb_Cherry_1a.wav",
   6 : "sounds/arb/cluster_1/Arb_Cherry_1b.wav",
   7 : "sounds/arb/cluster_1/Arb_Cherry_1c.wav",
-	8 : "sounds/arb/cluster_1/Arb_Cherry_1d.wav",
-	9 : "sounds/arb/cluster_1/Arb_Cherry_2a.wav",
-	10 : "sounds/arb/cluster_1/Arb_Cherry_2b.wav",
+  8 : "sounds/arb/cluster_1/Arb_Cherry_1d.wav",
+  9 : "sounds/arb/cluster_1/Arb_Cherry_2a.wav",
+  10 : "sounds/arb/cluster_1/Arb_Cherry_2b.wav",
   11 : "sounds/arb/cluster_1/Arb_Cherry_2c.wav",
   12 : "sounds/arb/cluster_1/Arb_Cherry_2d.wav",
   13 : "sounds/arb/cluster_1/Arb_Cherry_2e.wav",
-	14 : "sounds/arb/cluster_1/Arb_Cherry_3a.wav",
-	15 : "sounds/arb/cluster_1/Arb_Cherry_3b.wav",
-	16 : "sounds/arb/cluster_1/Arb_Cherry_3c.wav",
+  14 : "sounds/arb/cluster_1/Arb_Cherry_3a.wav",
+  15 : "sounds/arb/cluster_1/Arb_Cherry_3b.wav",
+  16 : "sounds/arb/cluster_1/Arb_Cherry_3c.wav",
   17 : "sounds/arb/cluster_1/Arb_Cherry_3d.wav",
   18 : "sounds/arb/cluster_1/Arb_Cherry_3e.wav",
   19 : "sounds/arb/cluster_1/Arb_Cherry_4a.wav",
-	20 : "sounds/arb/cluster_1/Arb_Cherry_4b.wav",
-	21 : "sounds/arb/cluster_1/Arb_Cherry_4c.wav",
-	22 : "sounds/arb/cluster_1/Arb_Cherry_4d.wav",
+  20 : "sounds/arb/cluster_1/Arb_Cherry_4b.wav",
+  21 : "sounds/arb/cluster_1/Arb_Cherry_4c.wav",
+  22 : "sounds/arb/cluster_1/Arb_Cherry_4d.wav",
   23 : "sounds/arb/cluster_1/Arb_Cherry_5a.wav",
   24 : "sounds/arb/cluster_1/Arb_Cherry_5b.wav",
   25 : "sounds/arb/cluster_1/Arb_Cherry_5c.wav",
-	26 : "sounds/arb/cluster_1/Arb_Cherry_5d.wav",
+  26 : "sounds/arb/cluster_1/Arb_Cherry_5d.wav",
   27 : "sounds/arb/cluster_1/Arb_Cherry_5e.wav",
   28 : "sounds/arb/cluster_1/Arb_Cherry_5f.wav",
-  29 : "sounds/arb/cluster_1/Arb_Cherry_6a.wav"
+  29 : "sounds/arb/cluster_1/Arb_Cherry_6a.wav",
   30 : "sounds/arb/cluster_1/Arb_Cherry_6b.wav",
   31 : "sounds/arb/cluster_1/Arb_Cherry_6c.wav",
   32 : "sounds/arb/cluster_1/Arb_Cherry_6d.wav",
@@ -56,16 +58,55 @@ const samples = new Tone.ToneAudioBuffers({
   47 : "sounds/arb/cluster_1/Arb_Cherry_10b.wav",
   48 : "sounds/arb/cluster_1/Arb_Cherry_10c.wav",
   49 : "sounds/arb/cluster_1/Arb_Cherry_10d.wav",
-  50 : "sounds/arb/cluster_1/Arb_Cherry_8c.wav",
-  51 : "sounds/arb/cluster_1/Arb_Cherry_8d.wav",
-  52 : "sounds/arb/cluster_1/Arb_Cherry_9a.wav",
-  53 : "sounds/arb/cluster_1/Arb_Cherry_9b.wav",
-  54 : "sounds/arb/cluster_1/Arb_Cherry_9c.wav",
-  55 : "sounds/arb/cluster_1/Arb_Cherry_9d.wav",
-  56 : "sounds/arb/cluster_1/Arb_Cherry_10a.wav",
-  57 : "sounds/arb/cluster_1/Arb_Cherry_10b.wav",
-  58 : "sounds/arb/cluster_1/Arb_Cherry_10c.wav",
-  59 : "sounds/arb/cluster_1/Arb_Cherry_10d.wav",
+  50 : "sounds/arb/cluster_1/Arb_Cherry_10e.wav",
+  51 : "sounds/arb/cluster_1/Arb_Cherry_11a.wav",
+  52 : "sounds/arb/cluster_1/Arb_Cherry_11b.wav",
+  53 : "sounds/arb/cluster_1/Arb_Cherry_11c.wav",
+  54 : "sounds/arb/cluster_1/Arb_Cherry_11d.wav",
+  55 : "sounds/arb/cluster_1/Arb_Cherry_12a.wav",
+  56 : "sounds/arb/cluster_1/Arb_Cherry_12b.wav",
+  57 : "sounds/arb/cluster_1/Arb_Cherry_12c.wav",
+  58 : "sounds/arb/cluster_1/Arb_Cherry_12d.wav",
+  59 : "sounds/arb/cluster_1/Arb_Cherry_13a.wav",
+  60 : "sounds/arb/cluster_1/Arb_Cherry_13b.wav",
+  61 : "sounds/arb/cluster_1/Arb_Cherry_13c.wav",
+  62 : "sounds/arb/cluster_1/Arb_Cherry_13d.wav",
+  63 : "sounds/arb/cluster_1/Arb_Cherry_14a.wav",
+  64 : "sounds/arb/cluster_1/Arb_Cherry_14b.wav",
+  65 : "sounds/arb/cluster_1/Arb_Cherry_14c.wav",
+  66 : "sounds/arb/cluster_1/Arb_Cherry_15a.wav",
+  67 : "sounds/arb/cluster_1/Arb_Cherry_15b.wav",
+  68 : "sounds/arb/cluster_1/Arb_Cherry_15c.wav",
+  69 : "sounds/arb/cluster_1/Arb_Cherry_15d.wav",
+  70 : "sounds/arb/cluster_1/Arb_Cherry_15e.wav",
+  71 : "sounds/arb/cluster_1/Arb_Cherry_16a.wav",
+  72 : "sounds/arb/cluster_1/Arb_Cherry_16b.wav",
+  73 : "sounds/arb/cluster_1/Arb_Cherry_16c.wav",
+  74 : "sounds/arb/cluster_1/Arb_Cherry_16d.wav",
+  75 : "sounds/arb/cluster_1/Arb_Cherry_17a.wav",
+  76 : "sounds/arb/cluster_1/Arb_Cherry_17b.wav",
+  77 : "sounds/arb/cluster_1/Arb_Cherry_17c.wav",
+  78 : "sounds/arb/cluster_1/Arb_Cherry_18a.wav",
+  79 : "sounds/arb/cluster_1/Arb_Cherry_18b.wav",
+  80 : "sounds/arb/cluster_1/Arb_Cherry_18c.wav",
+  81 : "sounds/arb/cluster_1/Arb_Cherry_18d.wav",
+  82 : "sounds/arb/cluster_1/Arb_Cherry_19a.wav",
+  83 : "sounds/arb/cluster_1/Arb_Cherry_19b.wav",
+  84 : "sounds/arb/cluster_1/Arb_Cherry_19c.wav",
+  85 : "sounds/arb/cluster_1/Arb_Cherry_19d.wav",
+  86 : "sounds/arb/cluster_1/Arb_Cherry_20a.wav",
+  87 : "sounds/arb/cluster_1/Arb_Cherry_20b.wav",
+  88 : "sounds/arb/cluster_1/Arb_Cherry_20c.wav",
+  89 : "sounds/arb/cluster_1/Arb_Cherry_20d.wav",
+  90 : "sounds/arb/cluster_1/Arb_Cherry_21a.wav",
+  91 : "sounds/arb/cluster_1/Arb_Cherry_21b.wav",
+  92 : "sounds/arb/cluster_1/Arb_Cherry_21c.wav",
+  93 : "sounds/arb/cluster_1/Arb_Cherry_21d.wav",
+  94 : "sounds/arb/cluster_1/Arb_Cherry_22a.wav",
+  95 : "sounds/arb/cluster_1/Arb_Cherry_22b.wav",
+  96 : "sounds/arb/cluster_1/Arb_Cherry_22c.wav",
+  97 : "sounds/arb/cluster_1/Arb_Cherry_22d.wav",
+//the high notes
 
 }, () => {
   rootPlayers = [];
@@ -152,8 +193,8 @@ function increment(evt) {
           if (melodyPlayerCount >= melodyPlayers.length) {
             melodyPlayerCount = 0;
           }
-          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(96) + 5); 
-              //here's the offset from the low notes and 96 a
+          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(97) + 5); 
+              //here's the offset from the low notes and 97 total files
 
           melodyPlayers[melodyPlayerCount].volume.value = -4;
           melodyPlayers[melodyPlayerCount].start();
@@ -167,7 +208,7 @@ function increment(evt) {
           melodyPlayerCount = 0;
         }
         try{
-          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(25));
+          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(97));
           melodyPlayers[melodyPlayerCount].volume.value = -4;
           melodyPlayers[melodyPlayerCount].start();
         } catch(error){} 
@@ -179,7 +220,7 @@ function increment(evt) {
             leadPlayerCount = 0;
           }
           try{
-            leadPlayers[leadPlayerCount].buffer = samples.get(getRandomInt(20) + 26);
+            leadPlayers[leadPlayerCount].buffer = samples.get(getRandomInt(70) + 97);
             leadPlayers[leadPlayerCount].volume.value = -8;
             leadPlayers[leadPlayerCount].start();
           } catch(error){}
