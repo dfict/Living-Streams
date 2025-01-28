@@ -106,7 +106,44 @@ const samples = new Tone.ToneAudioBuffers({
   95 : "sounds/arb/cluster_1/Arb_Cherry_22b.wav",
   96 : "sounds/arb/cluster_1/Arb_Cherry_22c.wav",
   97 : "sounds/arb/cluster_1/Arb_Cherry_22d.wav",
-//the high notes
+
+//the other notes
+  98 : "sounds/arb/cluster_2/Arb_Cherry_Low_2a.wav",
+  99 : "sounds/arb/cluster_2/Arb_Cherry_Low_2b.wav",
+  100 : "sounds/arb/cluster_2/Arb_Cherry_Low_2c.wav",
+  101 : "sounds/arb/cluster_2/Arb_Cherry_Low_2d.wav",
+  102 : "sounds/arb/cluster_2/Arb_Cherry_Low_2e.wav",
+  103 : "sounds/arb/cluster_2/Arb_Cherry_Low_2f.wav",
+  104 : "sounds/arb/cluster_2/Arb_Cherry_Low_3a.wav",
+  105 : "sounds/arb/cluster_2/Arb_Cherry_Low_3b.wav",
+  106 : "sounds/arb/cluster_2/Arb_Cherry_Low_3c.wav",
+  107 : "sounds/arb/cluster_2/Arb_Cherry_Low_3d.wav",
+  108 : "sounds/arb/cluster_2/Arb_Cherry_Low_3e.wav",
+  109 : "sounds/arb/cluster_2/Arb_Cherry_Low_3f.wav",
+  110 : "sounds/arb/cluster_2/Arb_Cherry_Low_4a.wav",
+  111 : "sounds/arb/cluster_2/Arb_Cherry_Low_4b.wav",
+  112 : "sounds/arb/cluster_2/Arb_Cherry_Low_4c.wav",
+  113 : "sounds/arb/cluster_2/Arb_Cherry_Low_4d.wav",
+  114 : "sounds/arb/cluster_2/Arb_Cherry_Low_4e.wav",
+  115 : "sounds/arb/cluster_2/Arb_Cherry_Low_4f.wav",
+  116 : "sounds/arb/cluster_2/Arb_Cherry_Low_5a.wav",
+  117 : "sounds/arb/cluster_2/Arb_Cherry_Low_5b.wav",
+  118 : "sounds/arb/cluster_2/Arb_Cherry_Low_5c.wav",
+  119 : "sounds/arb/cluster_2/Arb_Cherry_Low_5d.wav",
+  120 : "sounds/arb/cluster_2/Arb_Cherry_Low_5e.wav",
+  121 : "sounds/arb/cluster_2/Arb_Cherry_Low_5f.wav",
+  122 : "sounds/arb/cluster_2/Arb_Cherry_Low_6a.wav",
+  123 : "sounds/arb/cluster_2/Arb_Cherry_Low_6b.wav",
+  124 : "sounds/arb/cluster_2/Arb_Cherry_Low_6c.wav",
+  125 : "sounds/arb/cluster_2/Arb_Cherry_Low_6d.wav",
+  126 : "sounds/arb/cluster_2/Arb_Cherry_Low_6e.wav",
+  127 : "sounds/arb/cluster_2/Arb_Cherry_Low_6f.wav",
+  128 : "sounds/arb/cluster_2/Arb_Cherry_Low_7a.wav",
+  129 : "sounds/arb/cluster_2/Arb_Cherry_Low_7b.wav",
+  130 : "sounds/arb/cluster_2/Arb_Cherry_Low_7c.wav",
+  131 : "sounds/arb/cluster_2/Arb_Cherry_Low_7d.wav",
+  132 : "sounds/arb/cluster_2/Arb_Cherry_Low_7e.wav",
+  133 : "sounds/arb/cluster_2/Arb_Cherry_Low_7f.wav",
 
 }, () => {
   rootPlayers = [];
@@ -208,7 +245,7 @@ function increment(evt) {
           melodyPlayerCount = 0;
         }
         try{
-          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(97));
+          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(97) +5);
           melodyPlayers[melodyPlayerCount].volume.value = -4;
           melodyPlayers[melodyPlayerCount].start();
         } catch(error){} 
@@ -220,7 +257,7 @@ function increment(evt) {
             leadPlayerCount = 0;
           }
           try{
-            leadPlayers[leadPlayerCount].buffer = samples.get(getRandomInt(70) + 97);
+            leadPlayers[leadPlayerCount].buffer = samples.get(getRandomInt(36) + 98);
             leadPlayers[leadPlayerCount].volume.value = -8;
             leadPlayers[leadPlayerCount].start();
           } catch(error){}
