@@ -5,54 +5,68 @@ const fDel = new Tone.FeedbackDelay(.125, 0.4).connect(reverb);
 const fDel2 = new Tone.FeedbackDelay(.25, 0.4).connect(reverb);
 const filty = new Tone.AutoFilter(.06125, 400, 3).connect(fDel2);
 const samples = new Tone.ToneAudioBuffers({
-  0 : "sounds/root/sample_0.mp3",
-  1 : "sounds/gtr/cluster_1/sample_1.mp3",
-	2 : "sounds/gtr/cluster_1/sample_2.mp3",
-	3 : "sounds/gtr/cluster_1/sample_3.mp3",
-	4 : "sounds/gtr/cluster_1/sample_4.mp3",
-  5 : "sounds/gtr/cluster_1/sample_5.mp3",
-  6 : "sounds/gtr/cluster_1/sample_6.mp3",
-  7 : "sounds/gtr/cluster_1/sample_7.mp3",
-	8 : "sounds/gtr/cluster_1/sample_8.mp3",
-	9 : "sounds/gtr/cluster_1/sample_9.mp3",
-	10 : "sounds/gtr/cluster_1/sample_10.mp3",
-  11 : "sounds/gtr/cluster_1/sample_11.mp3",
-  12 : "sounds/gtr/cluster_1/sample_12.mp3",
-  13 : "sounds/gtr/cluster_1/sample_13.mp3",
-	14 : "sounds/gtr/cluster_1/sample_14.mp3",
-	15 : "sounds/gtr/cluster_1/sample_15.mp3",
-	16 : "sounds/gtr/cluster_1/sample_16.mp3",
-  17 : "sounds/gtr/cluster_1/sample_17.mp3",
-  18 : "sounds/gtr/cluster_1/sample_18.mp3",
-  19 : "sounds/gtr/cluster_1/sample_19.mp3",
-	20 : "sounds/gtr/cluster_1/sample_20.mp3",
-	21 : "sounds/gtr/cluster_1/sample_21.mp3",
-	22 : "sounds/gtr/cluster_1/sample_22.mp3",
-  23 : "sounds/gtr/cluster_1/sample_23.mp3",
-  24 : "sounds/gtr/cluster_1/sample_24.mp3",
-  25 : "sounds/gtr/cluster_1/sample_25.mp3",
-	26 : "sounds/gtr/cluster_1/sample_26.mp3",
-  27 : "sounds/gtr/cluster_2/sample_1.mp3",
-	28 : "sounds/gtr/cluster_2/sample_2.mp3",
-	29 : "sounds/gtr/cluster_2/sample_3.mp3",
-	30 : "sounds/gtr/cluster_2/sample_4.mp3",
-  31 : "sounds/gtr/cluster_2/sample_5.mp3",
-  32 : "sounds/gtr/cluster_2/sample_6.mp3",
-  33 : "sounds/gtr/cluster_2/sample_7.mp3",
-	34 : "sounds/gtr/cluster_2/sample_8.mp3",
-	35 : "sounds/gtr/cluster_2/sample_9.mp3",
-	36 : "sounds/gtr/cluster_2/sample_10.mp3",
-  37 : "sounds/gtr/cluster_2/sample_11.mp3",
-  38 : "sounds/gtr/cluster_2/sample_12.mp3",
-  39 : "sounds/gtr/cluster_2/sample_13.mp3",
-	40 : "sounds/gtr/cluster_2/sample_14.mp3",
-	41 : "sounds/gtr/cluster_2/sample_15.mp3",
-	42 : "sounds/gtr/cluster_2/sample_16.mp3",
-  43 : "sounds/gtr/cluster_2/sample_17.mp3",
-  44 : "sounds/gtr/cluster_2/sample_18.mp3",
-  45 : "sounds/gtr/cluster_2/sample_19.mp3",
-	46 : "sounds/gtr/cluster_2/sample_20.mp3",
-	47 : "sounds/gtr/cluster_2/sample_0.mp3",
+  0 : "sounds/root/Arb_Cherry_Low_1a.wav",
+  1 : "sounds/root/Arb_Cherry_Low_1b.wav",
+	2 : "sounds/root/Arb_Cherry_Low_1c.wav",
+	3 : "sounds/root/Arb_Cherry_Low_1d.wav",
+	4 : "sounds/root/Arb_Cherry_Low_1e.wav",
+
+  5 : "sounds/arb/cluster_1/Arb_Cherry_1a.wav",
+  6 : "sounds/arb/cluster_1/Arb_Cherry_1b.wav",
+  7 : "sounds/arb/cluster_1/Arb_Cherry_1c.wav",
+	8 : "sounds/arb/cluster_1/Arb_Cherry_1d.wav",
+	9 : "sounds/arb/cluster_1/Arb_Cherry_2a.wav",
+	10 : "sounds/arb/cluster_1/Arb_Cherry_2b.wav",
+  11 : "sounds/arb/cluster_1/Arb_Cherry_2c.wav",
+  12 : "sounds/arb/cluster_1/Arb_Cherry_2d.wav",
+  13 : "sounds/arb/cluster_1/Arb_Cherry_2e.wav",
+	14 : "sounds/arb/cluster_1/Arb_Cherry_3a.wav",
+	15 : "sounds/arb/cluster_1/Arb_Cherry_3b.wav",
+	16 : "sounds/arb/cluster_1/Arb_Cherry_3c.wav",
+  17 : "sounds/arb/cluster_1/Arb_Cherry_3d.wav",
+  18 : "sounds/arb/cluster_1/Arb_Cherry_3e.wav",
+  19 : "sounds/arb/cluster_1/Arb_Cherry_4a.wav",
+	20 : "sounds/arb/cluster_1/Arb_Cherry_4b.wav",
+	21 : "sounds/arb/cluster_1/Arb_Cherry_4c.wav",
+	22 : "sounds/arb/cluster_1/Arb_Cherry_4d.wav",
+  23 : "sounds/arb/cluster_1/Arb_Cherry_5a.wav",
+  24 : "sounds/arb/cluster_1/Arb_Cherry_5b.wav",
+  25 : "sounds/arb/cluster_1/Arb_Cherry_5c.wav",
+	26 : "sounds/arb/cluster_1/Arb_Cherry_5d.wav",
+  27 : "sounds/arb/cluster_1/Arb_Cherry_5e.wav",
+  28 : "sounds/arb/cluster_1/Arb_Cherry_5f.wav",
+  29 : "sounds/arb/cluster_1/Arb_Cherry_6a.wav"
+  30 : "sounds/arb/cluster_1/Arb_Cherry_6b.wav",
+  31 : "sounds/arb/cluster_1/Arb_Cherry_6c.wav",
+  32 : "sounds/arb/cluster_1/Arb_Cherry_6d.wav",
+  33 : "sounds/arb/cluster_1/Arb_Cherry_6e.wav",
+  34 : "sounds/arb/cluster_1/Arb_Cherry_7a.wav",
+  35 : "sounds/arb/cluster_1/Arb_Cherry_7b.wav",
+  36 : "sounds/arb/cluster_1/Arb_Cherry_7c.wav",
+  37 : "sounds/arb/cluster_1/Arb_Cherry_7d.wav",
+  38 : "sounds/arb/cluster_1/Arb_Cherry_8a.wav",
+  39 : "sounds/arb/cluster_1/Arb_Cherry_8b.wav",
+  40 : "sounds/arb/cluster_1/Arb_Cherry_8c.wav",
+  41 : "sounds/arb/cluster_1/Arb_Cherry_8d.wav",
+  42 : "sounds/arb/cluster_1/Arb_Cherry_9a.wav",
+  43 : "sounds/arb/cluster_1/Arb_Cherry_9b.wav",
+  44 : "sounds/arb/cluster_1/Arb_Cherry_9c.wav",
+  45 : "sounds/arb/cluster_1/Arb_Cherry_9d.wav",
+  46 : "sounds/arb/cluster_1/Arb_Cherry_10a.wav",
+  47 : "sounds/arb/cluster_1/Arb_Cherry_10b.wav",
+  48 : "sounds/arb/cluster_1/Arb_Cherry_10c.wav",
+  49 : "sounds/arb/cluster_1/Arb_Cherry_10d.wav",
+  50 : "sounds/arb/cluster_1/Arb_Cherry_8c.wav",
+  51 : "sounds/arb/cluster_1/Arb_Cherry_8d.wav",
+  52 : "sounds/arb/cluster_1/Arb_Cherry_9a.wav",
+  53 : "sounds/arb/cluster_1/Arb_Cherry_9b.wav",
+  54 : "sounds/arb/cluster_1/Arb_Cherry_9c.wav",
+  55 : "sounds/arb/cluster_1/Arb_Cherry_9d.wav",
+  56 : "sounds/arb/cluster_1/Arb_Cherry_10a.wav",
+  57 : "sounds/arb/cluster_1/Arb_Cherry_10b.wav",
+  58 : "sounds/arb/cluster_1/Arb_Cherry_10c.wav",
+  59 : "sounds/arb/cluster_1/Arb_Cherry_10d.wav",
+
 }, () => {
   rootPlayers = [];
   melodyPlayers = [];
@@ -67,13 +81,13 @@ const samples = new Tone.ToneAudioBuffers({
     leadPanners[x].type = "square";
     leadPanners[x].wet.value = .7;
     rootPlayers.push(new Tone.Player().connect(reverb));
-    rootPlayers[x].buffer = samples.get("0");
+    //rootPlayers[x].buffer = samples.get("0");
     melodyPlayers.push(new Tone.Player().connect(panners[x]));
     leadPlayers.push(new Tone.Player().connect(leadPanners[x]));
   }
-  document.querySelector(".button").innerHTML = "play";
+  document.querySelector(".button").innerHTML = "begin";
 });
-var isPlaying = false;
+let isPlaying = false;
 let ranSample = 0;
 let counter = 0;
 const silentPlayer = new Tone.Player("./sounds/silence.m4a");
@@ -82,9 +96,13 @@ silentPlayer.loop = true;
 rootPlayerCount = 0; //root voice allocator
 melodyPlayerCount = 0; //melody voice allocator
 leadPlayerCount = 0; //lead voice allocator
+
 function getRandomInt(max) {
-  return Math.floor(Math.random() * max) + 1;
+  return Math.floor(Math.random() * max);
 }
+//this function doesn't do anything until we use it. 
+//this defines the offset in the array so we can do things on top of the root note.
+
 //canvas to create music player
 let x = 0; //keep track of playhead drawing
 let isDrawing = false;
@@ -106,19 +124,27 @@ canvas.addEventListener('mousemove', e => {
 });
 ctx.fillStyle = "black";
 
+//increment is the music, and it needs isPlaying to be true to advance, to do anything
+
 function increment(evt) {
   if(isPlaying) {
-    counter = counter + .14;
+    counter = counter + .14; //granularity of time. (tempo baby)
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.fillRect(counter, 0, 1, canvas.height)
     //the low d ;P
-    if (counter > 6) { 
+    if (counter > 2) { 
       if (Math.floor(counter) % 4 == 0 && Math.random() > Math.random()*.8) {
         rootPlayerCount++;
+        
+        //if counter is evenly divisible by 4 AND some random operations, you may get a root note
+        //skewedness of random notes because it's not pure random
+
         if (rootPlayerCount >= rootPlayers.length) {
           rootPlayerCount = 0;
         }
+        rootPlayers[rootPlayerCount].buffer = samples.get(getRandomInt(4));
         rootPlayers[rootPlayerCount].start();    
+        //pick a random low note of the four notes
       }
       if (Math.floor(counter) % 5 == 0 && Math.random() > Math.random()*.8) {
         melodyPlayerCount++;
@@ -126,10 +152,14 @@ function increment(evt) {
           if (melodyPlayerCount >= melodyPlayers.length) {
             melodyPlayerCount = 0;
           }
-          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(25));
+          melodyPlayers[melodyPlayerCount].buffer = samples.get(getRandomInt(96) + 5); 
+              //here's the offset from the low notes and 96 a
+
           melodyPlayers[melodyPlayerCount].volume.value = -4;
           melodyPlayers[melodyPlayerCount].start();
-        } catch(error){}    
+        } catch(error){
+          console.log("sorry");
+        }    
       }
       if (Math.floor(counter) % 7 == 0 && Math.random() > Math.random()*.2) {
         melodyPlayerCount++;
@@ -163,7 +193,9 @@ function increment(evt) {
       }
     }
   }
-  setTimeout(increment, (Math.random() * 60 + 70));
+  setTimeout(increment, (Math.random() * 60 + 70)); 
+  //this defines a random impulse between 70 and 130 ms that defines the increment.
+  //so the rhythm doesn't advance metronomically
 }
 
 increment();
@@ -179,7 +211,7 @@ function init() {
   }
   else {
     Tone.Transport.pause();
-    document.querySelector(".button").innerHTML = "play";
+    document.querySelector(".button").innerHTML = "begin";
     isPlaying = false;
   }
 }

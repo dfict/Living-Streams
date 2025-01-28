@@ -5,3 +5,7 @@
 # Living Streams
 A generative web audio composition. 
  
+Students who want to host this can 
+in terminal use:
+python3 -m http.server
+to launch local host version
