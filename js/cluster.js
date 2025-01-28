@@ -252,7 +252,7 @@ function init() {
   }
   else {
     Tone.Transport.pause();
-    document.querySelector(".button").innerHTML = "begin";
+    document.querySelector(".button").innerHTML = "continue";
     isPlaying = false;
   }
 }

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/tmartinez88/Living-Streams/blob/main/assets/screenshot.png?raw=true" width="300" title="screenshot">
+  <img src="https://github.com/dfict/Living-Trees/blob/main/assets/screenshot.png?raw=true" width="300" title="screenshot">
 </p>
 
 # Living Streams
