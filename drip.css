@@ -2,6 +2,7 @@ html, body{
   overflow: hidden;
   margin: 0;
   padding:0;
+  background-color: #0FFF50; /* Bright neon green */
 }
 
 .main {
@@ -16,6 +17,7 @@ html, body{
   border-radius:15px;
   box-shadow: 10px 5px 5px black;
   margin-bottom: 15px;
+  background-color: #ff0fbe;
 }
 
 .button {
@@ -26,7 +28,7 @@ html, body{
   border-radius: 35px;
   border-color:black;
   color:black;
-  background-color: transparent;
+  background-color: #ff0fbe;
   box-shadow: 3px 3px 3px black;
   width: 75px;
   height:30px;
